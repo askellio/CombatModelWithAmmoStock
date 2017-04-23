@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.111" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <LineChart prefHeight="443.0" prefWidth="500.0" GridPane.columnIndex="3" GridPane.rowSpan="2">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </LineChart>
+      <VBox prefHeight="400.0" prefWidth="187.0">
+         <children>
+            <Label prefHeight="16.0" prefWidth="233.0" text="Команда красных" />
+            <Label text="Количество" />
+            <TextField />
+            <Label text="Скорострельность" />
+            <TextField />
+            <Label text="Вероятность попадания" />
+            <TextField />
+            <Label text="Запасы" />
+            <TextField />
+            <Separator prefHeight="26.0" prefWidth="187.0" />
+            <Label prefHeight="16.0" prefWidth="233.0" text="Команда синих" />
+            <Label text="Количество" />
+            <TextField />
+            <Label text="Скорострельность" />
+            <TextField />
+            <Label text="Вероятность попадания" />
+            <TextField />
+            <Label text="Запасы" />
+            <TextField />
+         </children>
+      </VBox>
+      <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="193.0" text="Рассчитать" GridPane.rowIndex="1" />
+   </children>
+</GridPane>
